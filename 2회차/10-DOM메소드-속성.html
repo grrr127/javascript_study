@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM 메소드 및 속성</title>
+  </head>
+  <body>
+    <h1 id="song-title" class="heading" title="엔플라잉-Dearest">
+      <span>폭망</span>
+    </h1>
+    <p class="lyrics">망했다 그동안 꽤 잘 참았는데</p>
+    <p class="lyrics">왜 갑자기 내 앞에 나타나 버린 거야</p>
+
+    <script>
+      console.log(document.querySelectorAll(".lyrics"));
+      console.log(document.getElementsByClassName("lyrics"));
+
+      const title = document.getElementById("song-title");
+      console.log(title);
+
+      console.log(title.textContent);
+      console.log(title.innerText);
+      console.log(title.className);
+      console.log(title.style);
+      console.log(title.title);
+    </script>
+  </body>
+</html>
